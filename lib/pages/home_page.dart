@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';
 
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
                 "Latihan 1",
               ),
             ),
-                        ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
@@ -36,6 +37,18 @@ class HomePage extends StatelessWidget {
               },
               child: Text(
                 "Latihan Listview",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => LatihanListile(),
+                  ),
+                );
+              },
+              child: Text(
+                "Latihan Listile",
               ),
             ),
           ],
