@@ -30,7 +30,7 @@ class Chatitem extends StatelessWidget {
 
   Chatitem(
       {required this.imageUrl, required this.title, required this.subTitle});
-
+ 
   @override
   Widget build(BuildContext context) {
     return ListTile(
