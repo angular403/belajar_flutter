@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
-import 'package:latihan_week3/pages/latihan_extract.dart';
+// import 'package:latihan_week3/pages/latihan_extract.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';

@@ -1,7 +1,22 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class ExtractWidget extends StatelessWidget {
-  const ExtractWidget({Key? key}) : super(key: key);
+  ExtractWidget({Key? key}) : super(key: key);
+
+  List<KotakWarna> AllItems = List.generate(
+    10,
+    (index) => KotakWarna(
+      warna: Color.fromARGB(
+        255,
+        200 + Random().nextInt(256),
+        200 + Random().nextInt(256),
+        200 + Random().nextInt(256),
+      ),
+      text: "Kotak ke ${index + 1}",
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -9,21 +24,10 @@ class ExtractWidget extends StatelessWidget {
       appBar: AppBar(
         title: Text("Extract Widget"),
       ),
-      body: Column(
-        children: [
-          KotakWarna(
-            warna: Colors.red,
-            text: "Merah",
-          ),
-          KotakWarna(
-            warna: Colors.amber,
-            text: "Kuning",
-          ),
-          KotakWarna(
-            warna: Colors.green,
-            text: "Hijau",
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: AllItems,
+        ),
       ),
     );
   }
