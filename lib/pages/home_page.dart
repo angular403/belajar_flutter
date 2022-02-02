@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_week3/exam/soal1.dart';
+import 'package:latihan_week3/exam/soal2.dart';
+import 'package:latihan_week3/exam/soal3.dart';
+import 'package:latihan_week3/exam/soal4.dart';
+import 'package:latihan_week3/exam/soal5.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
+import 'package:latihan_week3/pages/latihan_builder.dart';
 // import 'package:latihan_week3/pages/latihan_extract.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
@@ -53,7 +59,7 @@ class HomePage extends StatelessWidget {
                 "Latihan Listile",
               ),
             ),
-                     ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
@@ -63,6 +69,30 @@ class HomePage extends StatelessWidget {
               },
               child: Text(
                 "Latihan Extract Widget",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => LatihanBuilder(),
+                  ),
+                );
+              },
+              child: Text(
+                "Latihan Builder ",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => SoalKelima(),
+                  ),
+                );
+              },
+              child: Text(
+                "Exam Bootcamp",
               ),
             ),
           ],
