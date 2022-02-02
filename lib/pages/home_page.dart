@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_week3/pages/extract_widget.dart';
 import 'package:latihan_week3/pages/latihan_extract.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
@@ -56,7 +57,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => LatihanExtract(),
+                    builder: (context) => ExtractWidget(),
                   ),
                 );
               },
