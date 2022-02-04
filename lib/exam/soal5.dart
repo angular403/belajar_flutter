@@ -34,7 +34,7 @@ class SoalKelima extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 110, right: 120),
                     child: Text(
-                      "Hello 1",
+                      "Hello Exam",
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 25,
