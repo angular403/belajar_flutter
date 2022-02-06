@@ -20,29 +20,29 @@ class SoalKelima extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          width: 210,
-          height: 150,
+          width: 200,
+          height: 130,
           decoration: BoxDecoration(
             color: Colors.blue,
           ),
           child: Center(
-              child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.start,
-                // mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  
-                  Padding(
-                    padding: const EdgeInsets.only(top: 110, right: 120),
-                    child: Text(
-                      "Next Exam",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                      ),
+            child: Column(
+              // crossAxisAlignment: CrossAxisAlignment.start,
+              // mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 90, right: 60),
+                  child: Text(
+                    "Next Exam",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
                     ),
                   ),
-                ],
-              )),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
