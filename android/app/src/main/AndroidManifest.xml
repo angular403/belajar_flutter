@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.latihan_week3">
+   <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="latihan_week3"
         android:icon="@mipmap/ic_launcher">
