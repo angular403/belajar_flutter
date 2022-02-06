@@ -2,10 +2,11 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class ExtractWidget extends StatelessWidget {
-  ExtractWidget({Key? key}) : super(key: key);
+// ignore: must_be_immutable
+class LatihanWarna extends StatelessWidget {
+  LatihanWarna({Key? key}) : super(key: key);
 
-  List<KotakWarna> AllItems = List.generate(
+  List<KotakWarna> allItems = List.generate(
     10,
     (index) => KotakWarna(
       warna: Color.fromARGB(
@@ -26,7 +27,7 @@ class ExtractWidget extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: AllItems,
+          children: allItems,
         ),
       ),
     );
