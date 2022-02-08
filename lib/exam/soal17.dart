@@ -29,7 +29,7 @@ class Soal17 extends StatelessWidget {
               color: Colors.grey[300],
               image: DecorationImage(
                 fit: BoxFit.cover,
-                image: NetworkImage("https://picsum.photos/id/${778 + index}/200/300"),
+                image: NetworkImage("https://picsum.photos/id/${10 + index}/200/300"),
               ),
             ),
             child: Text(
