@@ -8,6 +8,11 @@ import 'package:flutter/material.dart';
 // import 'package:latihan_week3/exam/soal15.dart';
 // import 'package:latihan_week3/exam/soal16.dart';
 import 'package:latihan_week3/exam/soal17.dart';
+import 'package:latihan_week3/exam/soal18.dart';
+import 'package:latihan_week3/exam/soal19.dart';
+import 'package:latihan_week3/exam/soal20.dart';
+import 'package:latihan_week3/exam/soal21.dart';
+import 'package:latihan_week3/exam/soal22.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
 // import 'package:latihan_week3/exam/soal2.dart';
 // import 'package:latihan_week3/exam/soal3.dart';
@@ -100,7 +105,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => Soal17(),
+                    builder: (context) => Soal22(),
                   ),
                 );
               },

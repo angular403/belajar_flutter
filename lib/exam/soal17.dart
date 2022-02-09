@@ -24,8 +24,9 @@ class Soal17 extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(20),
             alignment: Alignment.bottomLeft,
-            height: 150,
+            height: 200,
             decoration: BoxDecoration(
+              borderRadius:  BorderRadius.circular(17),
               color: Colors.grey[300],
               image: DecorationImage(
                 fit: BoxFit.cover,
