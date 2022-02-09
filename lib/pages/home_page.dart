@@ -7,11 +7,11 @@ import 'package:flutter/material.dart';
 // import 'package:latihan_week3/exam/soal14.dart';
 // import 'package:latihan_week3/exam/soal15.dart';
 // import 'package:latihan_week3/exam/soal16.dart';
-import 'package:latihan_week3/exam/soal17.dart';
-import 'package:latihan_week3/exam/soal18.dart';
-import 'package:latihan_week3/exam/soal19.dart';
-import 'package:latihan_week3/exam/soal20.dart';
-import 'package:latihan_week3/exam/soal21.dart';
+// import 'package:latihan_week3/exam/soal17.dart';
+// import 'package:latihan_week3/exam/soal18.dart';
+// import 'package:latihan_week3/exam/soal19.dart';
+// import 'package:latihan_week3/exam/soal20.dart';
+// import 'package:latihan_week3/exam/soal21.dart';
 import 'package:latihan_week3/exam/soal22.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
 // import 'package:latihan_week3/exam/soal2.dart';
@@ -28,6 +28,8 @@ import 'package:latihan_week3/pages/latihan_builder.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';
+import 'package:latihan_week3/study/dialog.dart';
+import 'package:latihan_week3/study/snack.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -111,6 +113,18 @@ class HomePage extends StatelessWidget {
               },
               child: Text(
                 "Exam Bootcamp",
+              ),
+            ),
+             ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => Snack(),
+                  ),
+                );
+              },
+              child: Text(
+                "Study",
               ),
             ),
           ],
