@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
 
-class BarTab extends StatelessWidget {
-  const BarTab({Key? key}) : super(key: key);
+class BarTab extends StatefulWidget {
+  BarTab({Key? key}) : super(key: key);
 
+  @override
+  State<BarTab> createState() => _BarTabState();
+}
+
+class _BarTabState extends State<BarTab> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 4,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal,
           title: Text(
             "Whatsapp",
           ),
           centerTitle: false,
-          backgroundColor: Colors.teal,
           bottom: TabBar(
             tabs: [
               Tab(
@@ -23,7 +28,7 @@ class BarTab extends StatelessWidget {
                 text: "Chats",
               ),
               Tab(
-                text: "Status",
+                text: "Profile",
               ),
               Tab(
                 text: "Calls",
@@ -33,10 +38,18 @@ class BarTab extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Center(child: Text("Camera")),
-            Center(child: Text("Chars")),
-            Center(child: Text("Status")),
-            Center(child: Text("Callss")),
+            Center(
+              child: Text("Data Kamera"),
+            ),
+                    Center(
+              child: Text("Data Chars"),
+            ),
+                    Center(
+              child: Text("Data Status"),
+            ),
+                    Center(
+              child: Text("Data Panggilan"),
+            ),
           ],
         ),
       ),
