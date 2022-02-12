@@ -19,7 +19,7 @@ class _FormTextState extends State<FormText> {
     return Scaffold(
       appBar: AppBar(
         leading: FlutterLogo(),
-        title: Text("Form Login"),
+        title: Text("Latihan TextField"),
         actions: [
           IconButton(
             onPressed: () {},
@@ -36,9 +36,9 @@ class _FormTextState extends State<FormText> {
             keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
             decoration: InputDecoration(
-              labelText: "Email",
               contentPadding:
                   EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+              labelText: "Email",
               prefixIcon: Icon(Icons.email),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50),
@@ -51,16 +51,16 @@ class _FormTextState extends State<FormText> {
           TextField(
             controller: passC,
             obscureText: isHidden,
-            keyboardType: TextInputType.text,
             autocorrect: false,
+            keyboardType: TextInputType.text,
+            textInputAction: TextInputAction.next,
             decoration: InputDecoration(
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 30, vertical: 20),
               labelText: "Password",
-              contentPadding: EdgeInsets.symmetric(
-                horizontal: 30,
-                vertical: 20,
-              ),
               prefixIcon: Icon(Icons.vpn_key),
               suffixIcon: IconButton(
+                icon: Icon(isHidden ? Icons.visibility : Icons.visibility_off),
                 onPressed: () {
                   if (isHidden == true) {
                     isHidden = false;
@@ -68,28 +68,28 @@ class _FormTextState extends State<FormText> {
                     isHidden = true;
                   }
                   setState(() {});
+                  print(
+                      "Email Anda : ${emailC.text} & Password Anda : ${passC.text} ");
                 },
-                icon: Icon(isHidden ? Icons.visibility : Icons.visibility_off),
               ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
             ),
           ),
-          SizedBox(height: 20),
+          SizedBox(
+            height: 20,
+          ),
           ElevatedButton(
+            onPressed: () {},
             child: Text("Login"),
             style: ElevatedButton.styleFrom(
+              primary: Colors.red[900],
               padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-              primary: Colors.green[500],
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(50),
               ),
             ),
-            onPressed: () {
-              print(
-                  "Email Anda : ${emailC.text} & Password Anda : ${passC.text}");
-            },
           ),
         ],
       ),
