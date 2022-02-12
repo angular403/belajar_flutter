@@ -28,8 +28,9 @@ import 'package:latihan_week3/pages/latihan_builder.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';
-import 'package:latihan_week3/study/dialog.dart';
-import 'package:latihan_week3/study/snack.dart';
+// import 'package:latihan_week3/study/dialog.dart';
+import 'package:latihan_week3/study/form.dart';
+// import 'package:latihan_week3/study/snack.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -119,7 +120,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => Snack(),
+                    builder: (context) => FormText(),
                   ),
                 );
               },
