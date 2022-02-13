@@ -1,59 +1,75 @@
 import 'package:flutter/material.dart';
 
-class SheetBottom extends StatelessWidget {
+class SheetBottom extends StatefulWidget {
   const SheetBottom({Key? key}) : super(key: key);
 
+  @override
+  _SheetBottomState createState() => _SheetBottomState();
+}
+
+class _SheetBottomState extends State<SheetBottom> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Latihan BottomSheet"),
+        leading: FlutterLogo(),
+        title: Text("Belajar SheetBottom"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.settings),
+          ),
+        ],
       ),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(30),
-          child: ElevatedButton(
-            child: Text("Show Modal BottomSheet"),
-            onPressed: () {
-              showModalBottomSheet(
-                isDismissible: false,
-                context: context,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(20),
-                    topLeft: Radius.circular(20),
-                  ),
+        child: ElevatedButton(
+          child: Text("BottomSheet"),
+          onPressed: () {
+            showModalBottomSheet(
+              isDismissible: false,
+              context: context,
+              builder: (context) => SizedBox(
+                width: 250,
+                child: ListView(
+                  children: [
+                    ListTile(
+                      leading: Icon(Icons.camera_alt),
+                      title: Text("Camera"),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.multitrack_audio),
+                      title: Text("Audio"),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.music_note),
+                      title: Text("Music"),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.person),
+                      title: Text("Person"),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.picture_in_picture_alt_sharp),
+                      title: Text("Gallery"),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.cancel),
+                      title: Text("Cancel"),
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
                 ),
-                builder: (context) => SizedBox(
-                  height: 300,
-                  child: ListView(
-                    children: [
-                      ListTile(
-                        leading: Icon(Icons.photo),
-                        title: Text("Photo"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.music_note_rounded),
-                        title: Text("Music"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.video_collection),
-                        title: Text("Video"),
-                      ),
-                      ListTile(
-                        leading: Icon(Icons.share),
-                        title: Text("Share"),
-                      ),
-                      ListTile(
-                        onTap: () => Navigator.pop(context),
-                        leading: Icon(Icons.cancel),
-                        title: Text("Cancel"),
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            },
+              ),
+            );
+          },
+          style: ElevatedButton.styleFrom(
+            primary: Colors.red[900],
+            fixedSize: Size(200, 50),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(50),
+            ),
           ),
         ),
       ),
