@@ -120,7 +120,7 @@ class HomePage extends StatelessWidget {
                 "Exam Bootcamp",
               ),
             ),
-             ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
@@ -130,6 +130,18 @@ class HomePage extends StatelessWidget {
               },
               child: Text(
                 "Study",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => Instagram(),
+                  ),
+                );
+              },
+              child: Text(
+                "Latihan Instagram",
               ),
             ),
           ],
