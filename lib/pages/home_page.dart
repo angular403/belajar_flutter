@@ -14,6 +14,7 @@ import 'package:flutter/material.dart';
 // import 'package:latihan_week3/exam/soal21.dart';
 import 'package:latihan_week3/exam/soal22.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
+import 'package:latihan_week3/pages/latihan_api.dart';
 // import 'package:latihan_week3/exam/soal2.dart';
 // import 'package:latihan_week3/exam/soal3.dart';
 // import 'package:latihan_week3/exam/soal4.dart';
@@ -142,6 +143,18 @@ class HomePage extends StatelessWidget {
               },
               child: Text(
                 "Latihan Instagram",
+              ),
+            ),
+                        ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => LatihanApi(),
+                  ),
+                );
+              },
+              child: Text(
+                "Belajar Api",
               ),
             ),
           ],
