@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_week3/belajar_api/latihan_api_post.dart';
 // import 'package:latihan_week3/exam/soal1.dart';
 // import 'package:latihan_week3/exam/soal10.dart';
 // import 'package:latihan_week3/exam/soal11.dart';
@@ -14,7 +15,7 @@ import 'package:flutter/material.dart';
 // import 'package:latihan_week3/exam/soal21.dart';
 import 'package:latihan_week3/exam/soal22.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
-import 'package:latihan_week3/pages/latihan_api.dart';
+import 'package:latihan_week3/belajar_api/latihan_api_get.dart';
 // import 'package:latihan_week3/exam/soal2.dart';
 // import 'package:latihan_week3/exam/soal3.dart';
 // import 'package:latihan_week3/exam/soal4.dart';
@@ -46,118 +47,121 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Home Page"),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => Instagram(),
-                  ),
-                );
-              },
-              child: Text(
-                "Latihan 1",
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => Instagram(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Latihan 1",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => LatihanListview(),
-                  ),
-                );
-              },
-              child: Text(
-                "Latihan Listview",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LatihanListview(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Latihan Listview",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => LatihanListile(),
-                  ),
-                );
-              },
-              child: Text(
-                "Latihan Listile",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LatihanListile(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Latihan Listile",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => LatihanWarna(),
-                  ),
-                );
-              },
-              child: Text(
-                "Latihan Extract Widget",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LatihanWarna(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Latihan Extract Widget",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => LatihanBuilder(),
-                  ),
-                );
-              },
-              child: Text(
-                "Latihan Builder ",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LatihanBuilder(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Latihan Builder ",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => Soal22(),
-                  ),
-                );
-              },
-              child: Text(
-                "Exam Bootcamp",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => Soal22(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Exam Bootcamp",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => Drawers(),
-                  ),
-                );
-              },
-              child: Text(
-                "Study",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => Drawers(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Study",
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => Instagram(),
-                  ),
-                );
-              },
-              child: Text(
-                "Latihan Instagram",
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => Instagram(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Latihan Instagram",
+                ),
               ),
-            ),
-                        ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(
-                    builder: (context) => LatihanApi(),
-                  ),
-                );
-              },
-              child: Text(
-                "Belajar Api",
+                          ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LatihanPost(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Belajar Api",
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
