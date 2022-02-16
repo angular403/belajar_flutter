@@ -152,7 +152,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => LatihanPost(),
+                      builder: (context) => LatihanApiPost(),
                     ),
                   );
                 },
