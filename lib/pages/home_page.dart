@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_week3/belajar_api/latihan_api_delete.dart';
 import 'package:latihan_week3/belajar_api/latihan_api_post.dart';
+import 'package:latihan_week3/belajar_api/latihan_future_builder.dart';
 // import 'package:latihan_week3/exam/soal1.dart';
 // import 'package:latihan_week3/exam/soal10.dart';
 // import 'package:latihan_week3/exam/soal11.dart';
@@ -153,7 +154,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => LatihanApiDelete(),
+                      builder: (context) => LatihanFutureBuilder(),
                     ),
                   );
                 },
