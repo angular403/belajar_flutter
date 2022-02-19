@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_week3/belajar_api/latihan_api_delete.dart';
-import 'package:latihan_week3/belajar_api/latihan_api_post.dart';
+import 'package:latihan_week3/aplikasi_covid/aplikasi_covid.dart';
+// import 'package:latihan_week3/belajar_api/latihan_api_delete.dart';
+// import 'package:latihan_week3/belajar_api/latihan_api_post.dart';
 import 'package:latihan_week3/belajar_api/latihan_future_builder.dart';
 // import 'package:latihan_week3/exam/soal1.dart';
 // import 'package:latihan_week3/exam/soal10.dart';
@@ -17,7 +18,7 @@ import 'package:latihan_week3/belajar_api/latihan_future_builder.dart';
 // import 'package:latihan_week3/exam/soal21.dart';
 import 'package:latihan_week3/exam/soal22.dart';
 import 'package:latihan_week3/pages/extract_widget.dart';
-import 'package:latihan_week3/belajar_api/latihan_api_get.dart';
+// import 'package:latihan_week3/belajar_api/latihan_api_get.dart';
 // import 'package:latihan_week3/exam/soal2.dart';
 // import 'package:latihan_week3/exam/soal3.dart';
 // import 'package:latihan_week3/exam/soal4.dart';
@@ -32,12 +33,12 @@ import 'package:latihan_week3/pages/latihan_builder.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';
-import 'package:latihan_week3/study/barTab.dart';
-import 'package:latihan_week3/study/bottomBar.dart';
+// import 'package:latihan_week3/study/barTab.dart';
+// import 'package:latihan_week3/study/bottomBar.dart';
 import 'package:latihan_week3/study/draweer.dart';
 // import 'package:latihan_week3/study/dialog.dart';
-import 'package:latihan_week3/study/form.dart';
-import 'package:latihan_week3/study/sheetBottom.dart';
+// import 'package:latihan_week3/study/form.dart';
+// import 'package:latihan_week3/study/sheetBottom.dart';
 // import 'package:latihan_week3/study/snack.dart';
 
 class HomePage extends StatelessWidget {
@@ -150,7 +151,7 @@ class HomePage extends StatelessWidget {
                   "Latihan Instagram",
                 ),
               ),
-                          ElevatedButton(
+              ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
@@ -160,6 +161,18 @@ class HomePage extends StatelessWidget {
                 },
                 child: Text(
                   "Belajar Api",
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => AplikasiCovid(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Aplikasi Covid-19",
                 ),
               ),
             ],
