@@ -26,10 +26,12 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
+  convex_bottom_bar: ^3.0.0
   faker: ^2.0.0
   flutter_test:
     sdk: flutter
   http: ^0.13.1
+  intl: ^0.17.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
