@@ -33,6 +33,7 @@ import 'package:latihan_week3/pages/latihan_builder.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';
+import 'package:latihan_week3/study/avatar_glow.dart';
 import 'package:latihan_week3/study/belajarFaker.dart';
 // import 'package:latihan_week3/study/barTab.dart';
 // import 'package:latihan_week3/study/bottomBar.dart';
@@ -128,18 +129,7 @@ class HomePage extends StatelessWidget {
                   "Exam Bootcamp",
                 ),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(
-                      builder: (context) => BelajarFaker(),
-                    ),
-                  );
-                },
-                child: Text(
-                  "Study",
-                ),
-              ),
+    
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
@@ -174,6 +164,18 @@ class HomePage extends StatelessWidget {
                 },
                 child: Text(
                   "Aplikasi Covid-19",
+                ),
+              ),
+                        ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                      builder: (context) => LatihanAvatarGlow(),
+                    ),
+                  );
+                },
+                child: Text(
+                  "Study",
                 ),
               ),
             ],
