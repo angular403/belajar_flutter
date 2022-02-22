@@ -19,6 +19,7 @@ class _BelajarFakerState extends State<BelajarFaker> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names
     List<Widget> Widgets = [
       ListView.builder(
         itemCount: 6,

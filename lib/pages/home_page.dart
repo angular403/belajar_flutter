@@ -33,11 +33,12 @@ import 'package:latihan_week3/pages/latihan_builder.dart';
 import 'package:latihan_week3/pages/latihan_listile.dart';
 import 'package:latihan_week3/pages/latihan_listview.dart';
 import 'package:latihan_week3/pages/ui_instagram.dart';
-import 'package:latihan_week3/study/avatar_glow.dart';
-import 'package:latihan_week3/study/belajarFaker.dart';
+// import 'package:latihan_week3/study/avatar_glow.dart';
+// import 'package:latihan_week3/study/belajarFaker.dart';
 // import 'package:latihan_week3/study/barTab.dart';
 // import 'package:latihan_week3/study/bottomBar.dart';
-import 'package:latihan_week3/study/draweer.dart';
+// import 'package:latihan_week3/study/draweer.dart';
+import 'package:latihan_week3/study/latihan_pageview.dart';
 // import 'package:latihan_week3/study/dialog.dart';
 // import 'package:latihan_week3/study/form.dart';
 // import 'package:latihan_week3/study/sheetBottom.dart';
@@ -170,7 +171,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => LatihanAvatarGlow(),
+                      builder: (context) => LatihanPageview(),
                     ),
                   );
                 },
