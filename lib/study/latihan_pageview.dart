@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 
 class LatihanPageview extends StatelessWidget {
   const LatihanPageview({Key? key}) : super(key: key);
@@ -16,8 +16,12 @@ class LatihanPageview extends StatelessWidget {
           image: Center(
             child: Container(
               // child: Lottie.network('https://assets4.lottiefiles.com/packages/lf20_cqdzv4dr.json'),
-              // child: Image.network("https://picsum.photos/id/237/200/300"),
-              child: Lottie.asset('assets/page1.json', fit: BoxFit.contain),
+              child: Image.network(
+                "https://picsum.photos/id/237/200/300",
+                width: 500,
+                height: 250,
+              ),
+              // child: Lottie.asset('assets/page1.json', fit: BoxFit.contain),
               width: 250,
               height: 250,
             ),
@@ -30,8 +34,12 @@ class LatihanPageview extends StatelessWidget {
           image: Center(
             child: Container(
               // child: Lottie.network('https://assets4.lottiefiles.com/packages/lf20_cqdzv4dr.json'),
-              child: Lottie.asset('assets/page2.json', fit: BoxFit.contain),
-              // child: Image.network("https://picsum.photos/id/238/200/300"),
+              // child: Lottie.asset('assets/page2.json', fit: BoxFit.contain),
+              child: Image.network(
+                "https://picsum.photos/id/238/200/300",
+                width: 500,
+                height: 250,
+              ),
               // child: Lottie.asset("assets/https://assets7.lottiefiles.com/private_files/lf30_fcotb6bb.json"),
               width: 250,
               height: 250,
