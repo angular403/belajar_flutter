@@ -39,6 +39,7 @@ import 'package:latihan_week3/pages/ui_instagram.dart';
 // import 'package:latihan_week3/study/bottomBar.dart';
 // import 'package:latihan_week3/study/draweer.dart';
 import 'package:latihan_week3/study/latihan_pageview.dart';
+import 'package:latihan_week3/study/latihangetx.dart';
 import 'package:latihan_week3/study/search_kota.dart';
 // import 'package:latihan_week3/study/dialog.dart';
 // import 'package:latihan_week3/study/form.dart';
@@ -172,7 +173,7 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => DropdownKota(),
+                      builder: (context) => LatihanGetx(),
                     ),
                   );
                 },

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_week3/pages/home_page.dart';
-
+import 'package:get/get.dart';
+// import 'package:latihan_week3/study/latihangetx.dart';
 void main() {
   
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
