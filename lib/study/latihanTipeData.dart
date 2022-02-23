@@ -155,7 +155,12 @@ class LatihanTipeData extends StatelessWidget {
                   child: Text("ubah nama")),
             ],
           ),
-      
+          ElevatedButton(
+              onPressed: () {
+                // homeC.ubahNamaMap();
+                Get.offAllNamed("/home");
+              },
+              child: Text("back")),
         ],
       ),
     );

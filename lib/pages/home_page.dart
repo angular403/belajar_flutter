@@ -172,7 +172,9 @@ class HomePage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Get.to(LatihanTipeData());
+                  // Get.to(LatihanTipeData());
+                  // Navigator.of(context).pushNamed("latihan_tipe_data");
+                  Get.offAllNamed("/latihan_get_storage");
                 },
                 child: Text(
                   "Study",

@@ -2,15 +2,25 @@ import 'package:flutter/material.dart';
 // import 'package:avatar_glow/avatar_glow.dart';
 
 import 'package:avatar_glow/avatar_glow.dart';
+import 'package:latihan_week3/controllers/login_controller.dart';
+import 'package:get/get.dart';
 
 class LatihanAvatarGlow extends StatelessWidget {
-  const LatihanAvatarGlow({Key? key}) : super(key: key);
+  // const LatihanAvatarGlow({Key? key}) : super(key: key);
+  final LoginController loginC = Get.find();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("avatar glow"),
+        title: Text("avatar glow up"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                loginC.logout();
+              },
+              icon: Icon(Icons.logout)),
+        ],
       ),
       body: Center(
         child: AvatarGlow(
