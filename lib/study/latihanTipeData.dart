@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan_week3/controllers/home.controller.dart';
+import 'package:latihan_week3/pages/home_page.dart';
 
 class LatihanTipeData extends StatelessWidget {
   // const LatihanTipeData({Key? key}) : super(key: key);
@@ -151,9 +152,10 @@ class LatihanTipeData extends StatelessWidget {
                   onPressed: () {
                     homeC.ubahNamaMap();
                   },
-                  child: Text("ubah nama"))
+                  child: Text("ubah nama")),
             ],
-          )
+          ),
+      
         ],
       ),
     );

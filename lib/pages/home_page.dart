@@ -46,6 +46,7 @@ import 'package:latihan_week3/study/search_kota.dart';
 // import 'package:latihan_week3/study/form.dart';
 // import 'package:latihan_week3/study/sheetBottom.dart';
 // import 'package:latihan_week3/study/snack.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -133,7 +134,6 @@ class HomePage extends StatelessWidget {
                   "Exam Bootcamp",
                 ),
               ),
-    
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pushReplacement(
@@ -170,13 +170,9 @@ class HomePage extends StatelessWidget {
                   "Aplikasi Covid-19",
                 ),
               ),
-                        ElevatedButton(
+              ElevatedButton(
                 onPressed: () {
-                  Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(
-                      builder: (context) => LatihanTipeData(),
-                    ),
-                  );
+                  Get.to(LatihanTipeData());
                 },
                 child: Text(
                   "Study",
